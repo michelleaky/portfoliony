@@ -1,0 +1,689 @@
+/*             Generelt start                              */
+* {
+    box-sizing: border-box;
+
+}
+
+
+body {
+    margin: 0;
+    background-color: #f9feff;
+    background-image: url(billeder/forsidebaggrund.png);
+    background-repeat: repeat-y;
+}
+
+img {
+    width: 100%;
+}
+
+
+section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 6vw auto 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/*                Generelt slut                           */
+
+
+/*                Menu start                           */
+
+.hidden {
+    display: none;
+}
+
+#menuknap {
+    color: #3CADFF;
+    width: 10vw;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#burger {
+    margin: 0;
+}
+
+
+#topnav {
+    position: absolute;
+    margin: 1.3vw 5vw 0 18vw;
+}
+
+header {
+    text-align: center;
+    align-content: center;
+}
+
+#burger li {
+    list-style-type: none;
+    text-align: left;
+}
+
+#topnav a {
+    margin: 0 7vw 0 0.45vw;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+a {
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+a:link {
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    color: #0080ff;
+    text-decoration: none;
+}
+
+#index_b {
+    background-color: #DAECFE;
+}
+
+.menustreg {
+    background-image: url(billeder/menustreg.svg);
+    background-size: cover;
+    position: absolute;
+    width: 79.5vw;
+    height: 5vw;
+    left: 8vw;
+    top: 0.1vw;
+    display: none;
+}
+
+
+@media only screen and (min-width: 1090px) {
+
+    #menuknap,
+    #burger {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1090px) {
+
+    #topnav,
+    .menustreg {
+        display: block;
+    }
+}
+
+
+/*                Menu slut                           */
+
+/*               Forside start                            */
+
+#splash_wrap {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+}
+
+.splash {
+    background-image: url(billeder/forsidebaggrund.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: 30% 30%;
+    max-width: none;
+}
+
+.forsidetxtdesk {
+    background-image: url(billeder/forsidetxtdesk.svg);
+    background-size: cover;
+    position: fixed;
+    width: 85vw;
+    height: 21vw;
+    left: 6%;
+    top: 40%;
+    display: none;
+}
+
+.forsidetxtmobil {
+    background-image: url(billeder/forsidetxtmobil.svg);
+    background-size: cover;
+    position: fixed;
+    width: 30vw;
+    height: 122vw;
+    top: 25vw;
+    left: 20vw;
+}
+
+
+@media only screen and (min-width: 1090px) {
+    .forsidetxtmobil {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1090px) {
+    .forsidetxtdesk {
+        display: block;
+    }
+}
+
+/*                   Forside slut                        */
+
+/*                   Web start                        */
+
+
+
+
+
+#web .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#web .col {
+    flex-grow: 1;
+    flex-basis: 325px;
+
+}
+
+.web {
+    opacity: 0;
+}
+
+@media only screen and (min-width: 1090px) {
+
+    .menustregweb {
+        display: block;
+    }
+}
+
+#web .klikbar_col {
+    filter: opacity(70%);
+}
+
+#web .klikbar_col:hover {
+    transition: 0.5s;
+    filter: opacity(100%)
+}
+
+#web .txt {
+    margin: 5vw 2vw 0 0;
+}
+
+.dokumentationssite {
+    height: 5vw;
+    width: 30vw;
+    filter: opacity(70%);
+    margin: 10vw 0;
+}
+
+.dokumentationssite:hover {
+    transition: 0.5s;
+    filter: opacity(100%)
+}
+
+/*                  Web slut                         */
+
+/*                  UX start                          */
+.ux_designsprint {
+    opacity: 0;
+}
+
+#ux_designsprint .prototypelogo {
+    height: 15vw;
+    width: 20vw;
+    margin: 5vw;
+}
+
+#ux_designsprint .img {
+    position: absolute;
+    top: 23vw;
+    left: 29.5vw;
+    height: 15vw;
+    width: 40vw;
+
+    filter: opacity(40%)
+}
+
+#ux_designsprint .img:hover {
+    transition: 0.5s;
+    filter: opacity(100%)
+}
+
+#ux_designsprint .img2 {
+    position: absolute;
+    top: 23vw;
+    left: 29.5vw;
+    height: 15vw;
+    width: 40vw;
+
+    filter: opacity(40%)
+}
+
+#ux_designsprint .img2:hover {
+    transition: 0.5s;
+    filter: opacity(100%)
+}
+
+#ux_designsprint .txt {
+    margin: 5vw 2vw 0 0;
+}
+
+#ux_designsprint .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ux_designsprint .col {
+    flex-grow: 1;
+    flex-basis: 325px;
+
+    margin: 1vw;
+}
+
+#ux_designsprint .col_doku {
+    margin: 3vw 3vw 0 2vw;
+}
+
+#ux_designsprint .col_doku:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+#ux_designsprint .wrap_proto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.webproto1,
+.webproto2,
+.webproto3,
+.designsprintproto1,
+.designsprintproto2,
+.designsprintproto3 {
+    flex-grow: 3;
+    flex-basis: 200px;
+
+    margin: 0 5vw 0 3vw;
+}
+
+.webproto1 {
+    background-image: url(billeder/webproto1.png);
+    height: 39vw;
+    width: 25vw;
+    background-size: cover;
+}
+
+.webproto2 {
+    background-image: url(billeder/webproto2.png);
+    height: 39vw;
+    width: 25vw;
+    background-size: cover;
+}
+
+.webproto3 {
+    background-image: url(billeder/webproto3.png);
+    height: 39vw;
+    width: 25vw;
+    background-size: cover;
+}
+
+
+
+
+/*                  UX slut                          */
+/*                  UX start                          */
+.ux_webproto {
+    opacity: 0;
+}
+
+#ux_webproto .prototypelogo {
+    height: 15vw;
+    width: 20vw;
+    margin: 5vw;
+}
+
+#ux_webproto .img {
+    position: absolute;
+    top: 23vw;
+    left: 29.5vw;
+    height: 15vw;
+    width: 40vw;
+
+    filter: opacity(40%)
+}
+
+#ux_webproto .img:hover {
+    transition: 0.5s;
+    filter: opacity(100%)
+}
+
+#ux_webproto .img2 {
+    position: absolute;
+    top: 85vw;
+    left: 29.5vw;
+    height: 15vw;
+    width: 40vw;
+
+    filter: opacity(40%)
+}
+
+#ux_webproto .img2:hover {
+    transition: 0.5s;
+    filter: opacity(100%)
+}
+
+#ux_webproto .txt {
+    margin: 5vw 2vw 0 0;
+}
+
+#ux_webproto .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ux_webproto .col {
+    flex-grow: 1;
+    flex-basis: 325px;
+
+    margin: 1vw;
+}
+
+#ux_webproto .col_doku {
+    margin: 3vw 3vw 0 2vw;
+}
+
+#ux_webproto .col_doku:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+#ux_webproto .wrap_proto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.webproto1,
+.webproto2,
+.webproto3,
+.designsprintproto1,
+.designsprintproto2,
+.designsprintproto3 {
+    flex-grow: 3;
+    flex-basis: 200px;
+
+    margin: 0 5vw 0 3vw;
+}
+
+
+
+@media only screen and (max-width: 1090px) {
+
+    .designsprintproto2,
+    .designsprintproto3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    #ux_designsprint .img2 {
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        height: 15vw;
+        width: 40vw;
+    }
+}
+
+
+@media only screen and (max-width: 1090px) {
+
+    .webproto2,
+    .webproto3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    #ux_webproto .img {
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        height: 15vw;
+        width: 40vw;
+    }
+}
+
+
+
+
+
+.designsprintproto1 {
+    background-image: url(billeder/designsprintproto1.png);
+    height: 39vw;
+    width: 25vw;
+    background-size: cover;
+}
+
+.designsprintproto2 {
+    background-image: url(billeder/designsprintproto2.png);
+    height: 39vw;
+    width: 25vw;
+    background-size: cover;
+}
+
+.designsprintproto3 {
+    background-image: url(billeder/designsprintproto3.png);
+    height: 39vw;
+    width: 25vw;
+    background-size: cover;
+}
+
+
+/*                  UX slut                          */
+
+
+
+/*                  indhold start                          */
+.indhold {
+    opacity: 0;
+}
+
+#indhold .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#indhold .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+/*                  indhold slut                          */
+
+
+/*                Om mig start                           */
+
+.ommig {
+    opacity: 0;
+}
+
+#ommig .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ommig .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/*                Om mig slut                           */
+
+.ux_menu {
+    opacity: 0;
+}
+
+#ux_menu .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ux_menu .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+    margin: 5vw;
+    filter: opacity(65%);
+}
+
+#ux_menu .col:hover {
+    transition: 0.5s;
+    filter: opacity(100%);
+}
+
+
+/*                  animation start                          */
+.animation {
+    opacity: 0;
+}
+
+#animation .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#animation .col {
+    flex-grow: 2;
+    flex-basis: 300px;
+
+    margin: 1vw 3vw 1vw 0;
+}
+
+#animation .klikbar_col {
+    transform: scale(1);
+    margin: 5vw;
+}
+
+
+
+
+#animation .klikbar_col:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+#animation .klikbar_start {
+    filter: grayscale(1);
+
+}
+
+#animation .klikbar_start:hover {
+    transition: 0.5s;
+    filter: grayscale(0);
+}
+
+
+#animation .startknap_surf {
+    position: absolute;
+    top: 0vw;
+    left: 4vw;
+    height: 13vw;
+    width: 35vw;
+    filter: opacity(0);
+}
+
+#animation .startknap_surf:hover {
+    transition: 0.5s;
+    filter: opacity(1);
+}
+
+
+/*                  animation slut                          */
+
+
+
+/*              Animation Menu start            */
+
+.animation_menu {
+    opacity: 0;
+}
+
+#animation_menu .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#animation_menu .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+    margin: 5vw;
+    filter: opacity(70%)
+}
+
+#animation_menu .col:hover {
+    transition: 0.5s;
+    filter: opacity(100%);
+}
+
+/*              Animation Menu slut            */
+
+/*              Indhold Menu start            */
+
+.indhold_menu {
+    opacity: 0;
+}
+
+#indhold_menu .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#indhold_menu .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+    margin: 5vw;
+    filter: opacity(70%)
+}
+
+#indhold_menu .col:hover {
+    transition: 0.5s;
+    filter: opacity(100%);
+}
+
+.pilotvideotxt {
+    position: absolute;
+    top: 12vw;
+    left: 4vw;
+}
+
+/*              Indhold Menu slut            */
