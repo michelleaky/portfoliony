@@ -416,13 +416,9 @@ a:hover {
 }
 
 #ux_webproto .col_doku {
-    margin: 3vw 3vw 0 2vw;
+    margin: 1vw 5vw 0 2vw;
 }
 
-#ux_webproto .col_doku:hover {
-    transition: 0.5s;
-    transform: scale(1.05);
-}
 
 #ux_webproto .wrap_proto {
     display: flex;
