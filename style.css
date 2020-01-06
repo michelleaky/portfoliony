@@ -234,19 +234,18 @@ a:hover {
 }
 
 #web .txt {
-    margin: 5vw 2vw 0 0;
+    margin: 3vw 2vw 0 0;
 }
 
 .dokumentationssite {
-    height: 5vw;
-    width: 30vw;
-    filter: opacity(70%);
-    margin: 10vw 0;
+    height: 3vw;
+    width: 20vw;
+    margin: 5vw 0 0 5vw;
 }
 
 .dokumentationssite:hover {
     transition: 0.5s;
-    filter: opacity(100%)
+    transform: scale(1.1);
 }
 
 /*                  Web slut                         */
