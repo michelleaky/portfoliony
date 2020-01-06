@@ -37,6 +37,24 @@ video {
     display: none;
 }
 
+.fade {
+    animation-name: fade;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+
 #menuknap {
     color: #3CADFF;
     width: 10vw;
@@ -552,24 +570,6 @@ a:hover {
 /*                  indhold slut                          */
 
 
-/*                Om mig start                           */
-
-.ommig {
-    opacity: 0;
-}
-
-#ommig .wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#ommig .col {
-    flex-grow: 1;
-    flex-basis: 500px;
-}
-
-/*                Om mig slut                           */
-
 .ux_menu {
     opacity: 0;
 }
@@ -715,3 +715,23 @@ a:hover {
 }
 
 /*              Indhold Menu slut            */
+
+
+
+/*                Om mig start                           */
+
+.ommig {
+    opacity: 0;
+}
+
+#ommig .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ommig .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/*                Om mig slut                           */
