@@ -537,7 +537,19 @@ a:hover {
 
 /*                  UX slut                          */
 
+/******     UX designsprint start      **********/
 
+#ux_designsprint .col_designdoku1 {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+#ux_designsprint .col_designdoku2 {
+    flex-grow: 2;
+    flex-basis: 400px;
+}
+
+/******     UX designsprint start      **********/
 
 /*                  indhold start                          */
 .indhold {
@@ -744,6 +756,10 @@ a:hover {
 #ommig .col {
     flex-grow: 1;
     flex-basis: 500px;
+}
+
+#ommig p {
+    margin: 3vw 3vw 0 0;
 }
 
 /*                Om mig slut                           */
