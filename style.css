@@ -527,6 +527,28 @@ a:hover {
     flex-basis: 300px;
 }
 
+#indhold .wrap_redesign {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#indhold .col_redesign {
+    flex-grow: 2;
+    flex-basis: 300px;
+    margin: 3vw 3vw 3vw 0;
+}
+
+
+#indhold .dokumentationssite {
+    margin: 0 0 0 3vw;
+    margin: 2vw 0 3vw 5vw;
+    height: auto;
+    width: 230px;
+}
+
+
+
+
 /*                  indhold slut                          */
 
 
@@ -583,7 +605,7 @@ a:hover {
 
 #animation .col {
     flex-grow: 2;
-    flex-basis: 400px;
+    flex-basis: 300px;
 
     margin: 3vw 3vw 3vw 0;
 }
@@ -591,9 +613,10 @@ a:hover {
 #animation .klikbar_col {
     transform: scale(1);
     margin: 2vw 0 3vw 5vw;
-    height: 10px;
-    width: 30vw;
+    height: auto;
+    width: 400px;
 }
+
 
 
 
