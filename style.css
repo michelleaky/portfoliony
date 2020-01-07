@@ -1054,28 +1054,28 @@ a:hover {
 
 #ux_dataindsamling .col {
     flex-grow: 1;
-    flex-basis: 500px;
+    flex-basis: 600px;
 
     margin: 5vw 0 0 0;
 }
 
 #ux_dataindsamling .col2 {
     flex-grow: 1;
-    flex-basis: 500px;
+    flex-basis: 600px;
 
     margin: 11vw 0 0 0;
 }
 
 #ux_dataindsamling .col3 {
     flex-grow: 1;
-    flex-basis: 500px;
+    flex-basis: 600px;
 
     margin: -3vw 0 0vw 0;
 }
 
 #ux_dataindsamling .col4 {
     flex-grow: 1;
-    flex-basis: 500px;
+    flex-basis: 600px;
 
     margin: -3vw 0 0 0;
 }
