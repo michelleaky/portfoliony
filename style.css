@@ -423,6 +423,10 @@ a:hover {
     margin: 3vw 0 3vw 3vw;
 }
 
+#ux_webproto a p {
+    font-size: 1.2rem;
+}
+
 #ux_webproto .prototypelogo {
     height: 15vw;
     width: 20vw;
@@ -667,7 +671,7 @@ a:hover {
     flex-grow: 1;
     flex-basis: 300px;
 
-    margin: 5vw;
+    margin: 5vw 5vw 1vw 5vw;
     filter: opacity(65%);
 }
 
@@ -761,7 +765,7 @@ a:hover {
     flex-grow: 1;
     flex-basis: 300px;
 
-    margin: 5vw;
+    margin: 5vw 5vw 1vw 5vw;
     filter: opacity(70%)
 }
 
@@ -787,7 +791,7 @@ a:hover {
     flex-grow: 1;
     flex-basis: 300px;
 
-    margin: 5vw;
+    margin: 5vw 5vw 1vw 5vw;
     filter: opacity(70%)
 }
 
