@@ -28,6 +28,10 @@ video {
     height: auto;
 }
 
+iframe {
+    border-style: hidden;
+}
+
 /*                Generelt slut                           */
 
 
