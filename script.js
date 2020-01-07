@@ -4,7 +4,6 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
     console.log("Siden Vises");
 
-    clickMenu();
 
     document.querySelector("#menuknap").addEventListener("click", clickMenu);
 
