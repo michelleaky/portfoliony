@@ -18,9 +18,9 @@ img {
 
 
 section {
-    padding: 2rem;
+    padding: 1rem;
     max-width: 1200px;
-    margin: 6vw auto 0;
+    margin: 3vw auto 0;
 }
 
 video {
@@ -314,7 +314,7 @@ a:hover {
     top: 23vw;
     left: 29.5vw;
     height: 15vw;
-    width: 40vw;
+    width: 33vw;
 
     filter: opacity(40%)
 }
@@ -352,6 +352,17 @@ a:hover {
 #ux_designsprint .wrap_proto {
     display: flex;
     flex-wrap: wrap;
+}
+
+#ux_designsprint .wrap1 {
+    background-color: #F4F9FF;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ux_designsprint img {
+    width: 120%;
+
 }
 
 .webproto1,
@@ -537,19 +548,7 @@ a:hover {
 
 /*                  UX slut                          */
 
-/******     UX designsprint start      **********/
 
-#ux_designsprint .col_designdoku1 {
-    flex-grow: 1;
-    flex-basis: 200px;
-}
-
-#ux_designsprint .col_designdoku2 {
-    flex-grow: 2;
-    flex-basis: 400px;
-}
-
-/******     UX designsprint start      **********/
 
 /*                  indhold start                          */
 .indhold {
@@ -574,7 +573,7 @@ a:hover {
 #indhold .col_redesign {
     flex-grow: 2;
     flex-basis: 300px;
-    margin: 3vw 3vw 3vw 0;
+    margin: 3vw 2vw 2vw 0;
 }
 
 
@@ -582,7 +581,7 @@ a:hover {
     margin: 0 0 0 3vw;
     margin: 2vw 0 3vw 5vw;
     height: auto;
-    width: 230px;
+    width: 300px;
 }
 
 
@@ -631,7 +630,7 @@ a:hover {
     flex-grow: 2;
     flex-basis: 300px;
 
-    margin: 3vw 3vw 3vw 0;
+    margin: 1vw 3vw 3vw 0;
 }
 
 #animation .klikbar_col {
