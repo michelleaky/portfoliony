@@ -598,7 +598,7 @@ a:hover {
 
 #indhold .dokumentationssite {
     margin: 0 0 0 3vw;
-    margin: 2vw 0 3vw 5vw;
+    margin: 8vw 0 3vw 5vw;
     height: auto;
     width: 300px;
 }
@@ -614,6 +614,41 @@ a:hover {
 #indhold .txtpilot,
 #indhold .colvideo {
     margin: 5vw 2vw 0 1vw;
+}
+
+#indhold .piercing_video,
+#indhold .omos_video {
+    width: 600px;
+    margin: 3vw 3vw 0 0vw;
+}
+
+#indhold .promo_video {
+    width: 400px;
+    margin: 3vw 3vw 0 0;
+}
+
+#indhold .promo_video {
+    flex-grow: 2;
+    flex-basis: 200px;
+}
+
+#indhold .piercing_video,
+#indhold .omos_video {
+    flex-grow: 2;
+    flex-basis: 600px;
+}
+
+#indhold .col_piercing,
+#indhold .col_omos,
+#indhold .col_promo {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#indhold .col_piercing p,
+#indhold .col_omos p,
+#indhold .col_promo p {
+    margin: 10vw 0 0 0;
 }
 
 /*                  indhold slut                          */
