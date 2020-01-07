@@ -833,3 +833,60 @@ a:hover {
 }
 
 /*                Om mig slut                           */
+
+
+/*                   Web start                        */
+
+
+
+
+
+#ux_dataindsamling .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ux_dataindsamling .col {
+    flex-grow: 1;
+    flex-basis: 325px;
+
+    margin: 5vw 0 0 0;
+}
+
+#ux_dataindsamling .col2 {
+    flex-grow: 1;
+    flex-basis: 325px;
+
+    margin: 11vw 0 0 0;
+}
+
+.ux_dataindsamling {
+    opacity: 0;
+}
+
+
+#ux_dataindsamling .klikbar_col {
+    filter: opacity(70%);
+}
+
+#ux_dataindsamling .klikbar_col:hover {
+    transition: 0.5s;
+    filter: opacity(100%)
+}
+
+#ux_dataindsamling .txt {
+    margin: 3vw 2vw 0 0;
+}
+
+.dataindsamling {
+    height: 3vw;
+    width: 20vw;
+    margin: 0vw 0 5vw 13vw;
+}
+
+.dataindsamling:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+/*                  Web slut                         */
