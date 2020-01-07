@@ -248,6 +248,7 @@ a:hover {
     flex-grow: 1;
     flex-basis: 325px;
 
+    margin: 5vw 0 0 0;
 }
 
 .web {
@@ -292,6 +293,10 @@ a:hover {
     opacity: 0;
 }
 
+#ux_designsprint h1 {
+    margin: 3vw 0 3vw 3vw;
+}
+
 #ux_designsprint .prototypelogo {
     height: 15vw;
     width: 20vw;
@@ -328,9 +333,10 @@ a:hover {
     filter: opacity(100%)
 }
 
-#ux_designsprint .txt {
-    margin: 5vw 2vw 0 0;
+#ux_designsprint p {
+    margin: 1vw 0vw 0 2vw;
 }
+
 
 #ux_designsprint .wrap {
     display: flex;
@@ -345,7 +351,7 @@ a:hover {
 }
 
 #ux_designsprint .col_doku {
-    margin: 3vw 3vw 0 2vw;
+    margin: 1vw 6vw 0 0vw;
 }
 
 #ux_designsprint .col_doku:hover {
@@ -406,9 +412,15 @@ a:hover {
 
 
 /*                  UX slut                          */
+
+
 /*                  UX start                          */
 .ux_webproto {
     opacity: 0;
+}
+
+#ux_webproto h1 {
+    margin: 3vw 0 3vw 3vw;
 }
 
 #ux_webproto .prototypelogo {
@@ -447,8 +459,8 @@ a:hover {
     filter: opacity(100%)
 }
 
-#ux_webproto .txt {
-    margin: 5vw 2vw 0 0;
+#ux_webproto p {
+    margin: 1vw 2vw 0 0;
 }
 
 #ux_webproto .wrap {
@@ -457,16 +469,19 @@ a:hover {
 }
 
 #ux_webproto .col {
-    flex-grow: 1;
-    flex-basis: 325px;
+    flex-grow: 3;
+    flex-basis: 200px;
 
-    margin: 1vw;
+    margin: 0 5vw 0 3vw;
 }
 
 #ux_webproto .col_doku {
-    margin: 1vw 5vw 0 2vw;
+    margin: 1vw 8vw 0 0vw;
 }
 
+#ux_webproto .hojre {
+    margin: 0 0 0 2vw;
+}
 
 #ux_webproto .wrap_proto {
     display: flex;
@@ -592,6 +607,13 @@ a:hover {
 #indhold .colvideo {
     flex-grow: 2;
     flex-basis: 300px;
+
+    padding: 6vw 0 0 0;
+}
+
+#indhold .txtpilot,
+#indhold .colvideo {
+    margin: 5vw 2vw 0 1vw;
 }
 
 /*                  indhold slut                          */
@@ -680,6 +702,10 @@ a:hover {
     filter: opacity(1);
 }
 
+#animation p {
+    margin: 0 0 2vw 0;
+}
+
 
 /*                  animation slut                          */
 
@@ -759,6 +785,7 @@ a:hover {
 #ommig .col {
     flex-grow: 1;
     flex-basis: 500px;
+    margin: 5vw 0 0 0;
 }
 
 #ommig p {
