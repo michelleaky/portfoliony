@@ -819,12 +819,13 @@ a:hover {
 
 #ommig .col {
     flex-grow: 1;
-    flex-basis: 500px;
+    flex-basis: 400px;
     margin: 5vw 0 0 0;
 }
 
-#ommig p {
-    margin: 3vw 3vw 0 0;
+#ommig p,
+#ommig h1 {
+    margin: 3vw 3vw 0 3vw;
 }
 
 /*                Om mig slut                           */
