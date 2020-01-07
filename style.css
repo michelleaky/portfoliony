@@ -211,7 +211,7 @@ a:hover {
 .forsidetxtmobil {
     background-image: url(billeder/forsidetxtmobil.svg);
     background-size: cover;
-    position: fixed;
+    position: absolute;
     width: 30vw;
     height: 122vw;
     top: 25vw;
@@ -219,14 +219,21 @@ a:hover {
 }
 
 
-@media only screen and (min-width: 1090px) {
+@media only screen and (min-width: 600px) {
     .forsidetxtmobil {
         display: none;
     }
 }
 
-@media only screen and (min-width: 1090px) {
+@media only screen and (min-width: 600px) {
     .forsidetxtdesk {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1090px) {
+
+    .menustregweb {
         display: block;
     }
 }
@@ -246,21 +253,16 @@ a:hover {
 
 #web .col {
     flex-grow: 1;
-    flex-basis: 325px;
+    flex-basis: 500px;
 
     margin: 5vw 0 0 0;
 }
 
 .web {
     opacity: 0;
+
 }
 
-@media only screen and (min-width: 1090px) {
-
-    .menustregweb {
-        display: block;
-    }
-}
 
 #web .klikbar_col {
     filter: opacity(70%);
@@ -276,8 +278,8 @@ a:hover {
 }
 
 .dokumentationssite {
-    height: 3vw;
-    width: 20vw;
+    height: 100px;
+    width: 300px;
     margin: 5vw 0 0 5vw;
 }
 
@@ -285,6 +287,15 @@ a:hover {
     transition: 0.5s;
     transform: scale(1.1);
 }
+
+@media only screen and (min-width: 700px) {
+
+    #web .col {
+        flex-grow: 1;
+        flex-basis: 300px;
+    }
+}
+
 
 /*                  Web slut                         */
 
@@ -303,6 +314,7 @@ a:hover {
     margin: 5vw;
 }
 
+/*
 #ux_designsprint .img {
     position: absolute;
     top: 23vw;
@@ -317,6 +329,7 @@ a:hover {
     transition: 0.5s;
     filter: opacity(100%)
 }
+*/
 
 #ux_designsprint .img2 {
     position: absolute;
@@ -334,7 +347,7 @@ a:hover {
 }
 
 #ux_designsprint p {
-    margin: 1vw 0vw 0 2vw;
+    margin: 2vw 3vw 4vw 2vw;
 }
 
 
@@ -352,6 +365,8 @@ a:hover {
 
 #ux_designsprint .col_doku {
     margin: 1vw 6vw 0 0vw;
+    width: 300px;
+    height: auto;
 }
 
 #ux_designsprint .col_doku:hover {
@@ -370,10 +385,13 @@ a:hover {
     flex-wrap: wrap;
 }
 
+/*
+
 #ux_designsprint img {
     width: 120%;
 
 }
+*/
 
 .webproto1,
 .webproto2,
@@ -381,7 +399,7 @@ a:hover {
 .designsprintproto1,
 .designsprintproto2,
 .designsprintproto3 {
-    flex-grow: 3;
+    flex-grow: 1;
     flex-basis: 200px;
 
     margin: 0 5vw 0 3vw;
@@ -389,22 +407,22 @@ a:hover {
 
 .webproto1 {
     background-image: url(billeder/webproto1.png);
-    height: 39vw;
-    width: 25vw;
+    height: 530px;
+    width: 250px;
     background-size: cover;
 }
 
 .webproto2 {
     background-image: url(billeder/webproto2.png);
-    height: 39vw;
-    width: 25vw;
+    height: 530px;
+    width: 250px;
     background-size: cover;
 }
 
 .webproto3 {
     background-image: url(billeder/webproto3.png);
-    height: 39vw;
-    width: 25vw;
+    height: 530px;
+    width: 250px;
     background-size: cover;
 }
 
@@ -439,8 +457,17 @@ a:hover {
     left: 29.5vw;
     height: 15vw;
     width: 40vw;
+    margin: 0 5vw 0 3vw;
 
     filter: opacity(40%)
+}
+
+@media only screen and (max-width: 1089px) {
+
+    #ux_webproto .img {
+        top: 65vw;
+        left: 10vw;
+    }
 }
 
 #ux_webproto .img:hover {
@@ -448,6 +475,7 @@ a:hover {
     filter: opacity(100%)
 }
 
+/*
 #ux_webproto .img2 {
     position: absolute;
     top: 85vw;
@@ -457,14 +485,18 @@ a:hover {
 
     filter: opacity(40%)
 }
+*/
 
+/*
 #ux_webproto .img2:hover {
     transition: 0.5s;
     filter: opacity(100%)
 }
+*/
 
 #ux_webproto p {
-    margin: 1vw 2vw 0 0;
+    margin: 2vw 3vw 4vw 2vw;
+
 }
 
 #ux_webproto .wrap {
@@ -473,23 +505,19 @@ a:hover {
 }
 
 #ux_webproto .col {
-    flex-grow: 3;
+    flex-grow: 1;
     flex-basis: 200px;
-
-    margin: 0 5vw 0 3vw;
+    background-color: white;
 }
 
-#ux_webproto .col_doku {
-    margin: 1vw 8vw 0 0vw;
-}
 
-#ux_webproto .hojre {
-    margin: 0 0 0 2vw;
-}
+
+
 
 #ux_webproto .wrap_proto {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .webproto1,
@@ -504,16 +532,34 @@ a:hover {
     margin: 0 5vw 0 3vw;
 }
 
+@media only screen and (max-width: 1089px) {
+
+    #ux_designsprint .img2 {
+        top: 65vw;
+        left: 10vw;
+    }
+}
 
 
 @media only screen and (max-width: 1090px) {
 
-    .designsprintproto2,
+
     .designsprintproto3 {
         display: none;
     }
 }
 
+@media only screen and (max-width: 1090px) {
+
+    #ux_designsprint .designsprintproto3 {
+        height: 530px;
+        width: 250px;
+        background-size: cover;
+    }
+}
+
+
+/*
 @media only screen and (max-width: 1090px) {
     #ux_designsprint .img2 {
         position: absolute;
@@ -523,8 +569,26 @@ a:hover {
         width: 40vw;
     }
 }
+*/
 
+@media only screen and (max-width: 700px) {
+    #ux_designsprint .img2 {
+        top: 90vw;
+        left: 5vw;
+        height: auto;
+        width: 350px;
+    }
+}
 
+@media only screen and (max-width: 1089px) {
+
+    #ux_webproto .img {
+        top: 65vw;
+        left: 10vw;
+    }
+}
+
+/*
 @media only screen and (max-width: 1090px) {
 
     .webproto2,
@@ -532,39 +596,79 @@ a:hover {
         display: none;
     }
 }
+*/
 
 @media only screen and (max-width: 1090px) {
+
+    #ux_webproto .webproto1 {
+        height: 530px;
+        width: 250px;
+        background-size: cover;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
     #ux_webproto .img {
-        position: absolute;
-        top: 250px;
-        left: 50%;
-        height: 15vw;
-        width: 40vw;
+        top: 90vw;
+        left: 5vw;
+        height: auto;
+        width: 350px;
+    }
+}
+
+
+@media only screen and (max-width: 1089px) {
+
+    #ux_webproto .webproto3,
+    #ux_webproto .col_doku {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1089px) {
+
+    #ux_designsprint .col_doku {
+        flex-basis: 700px;
+    }
+}
+
+@media only screen and (max-width: 1089px) {
+
+    #ux_webproto .col,
+    #ux_webproto .col {
+        flex-basis: 500px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #ux_webproto .col {
+        margin: 1vw;
     }
 }
 
 
 
 
-
 .designsprintproto1 {
     background-image: url(billeder/designsprintproto1.png);
-    height: 39vw;
-    width: 25vw;
+    height: 530px;
+    width: 250px;
     background-size: cover;
 }
 
 .designsprintproto2 {
     background-image: url(billeder/designsprintproto2.png);
-    height: 39vw;
-    width: 25vw;
+    height: 530px;
+    width: 250px;
     background-size: cover;
 }
 
 .designsprintproto3 {
     background-image: url(billeder/designsprintproto3.png);
-    height: 39vw;
-    width: 25vw;
+    height: 530px;
+    width: 250px;
     background-size: cover;
 }
 
@@ -583,10 +687,12 @@ a:hover {
     flex-wrap: wrap;
 }
 
+/*
 #indhold .col {
     flex-grow: 1;
     flex-basis: 300px;
 }
+*/
 
 #indhold .wrap_redesign {
     display: flex;
@@ -595,29 +701,40 @@ a:hover {
 
 #indhold .col_redesign {
     flex-grow: 2;
-    flex-basis: 300px;
+    flex-basis: 500px;
     margin: 3vw 2vw 2vw 0;
 }
 
 
 #indhold .dokumentationssite {
     margin: 0 0 0 3vw;
-    margin: 8vw 0 3vw 5vw;
+    margin: 2vw 0 3vw 5vw;
     height: auto;
-    width: 300px;
+    width: 400px;
+}
+
+@media only screen and (min-width: 850px) {
+
+    #indhold .col_redesign {
+        flex-basis: 200px;
+    }
+
+    #indhold .dokumentationssite {
+        margin: 10vw 0 3vw 5vw;
+    }
 }
 
 
-#indhold .colvideo {
-    flex-grow: 2;
-    flex-basis: 300px;
 
+#indhold .colvideo {
     padding: 6vw 0 0 0;
 }
 
 #indhold .txtpilot,
 #indhold .colvideo {
     margin: 5vw 2vw 0 1vw;
+    flex-grow: 2;
+    flex-basis: 500px;
 }
 
 #indhold .piercing_video,
@@ -633,26 +750,70 @@ a:hover {
 
 #indhold .promo_video {
     flex-grow: 2;
-    flex-basis: 200px;
+    flex-basis: 500px;
 }
 
 #indhold .piercing_video,
 #indhold .omos_video {
     flex-grow: 2;
-    flex-basis: 600px;
+    flex-basis: 1200px;
 }
 
 #indhold .col_piercing,
 #indhold .col_omos,
 #indhold .col_promo {
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 400px;
 }
 
 #indhold .col_piercing p,
 #indhold .col_omos p,
 #indhold .col_promo p {
     margin: 10vw 0 0 0;
+}
+
+@media only screen and (min-width: 850px) {
+
+    #indhold .col_piercing,
+    #indhold .col_omos,
+    #indhold .col_promo {
+        flex-basis: 200px;
+    }
+
+    #indhold .piercing_video,
+    #indhold .omos_video {
+        flex-basis: 100px;
+    }
+
+
+}
+
+@media only screen and (min-width: 850px) {
+
+
+    #indhold .promo_video {
+        flex-basis: 200px;
+    }
+}
+
+
+
+
+
+
+#indhold .col,
+#indhold .colvideo {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+
+@media only screen and (min-width: 850px) {
+
+    #indhold .colvideo,
+    #indhold .txtpilot {
+        flex-basis: 200px;
+    }
 }
 
 /*                  indhold slut                          */
@@ -669,7 +830,7 @@ a:hover {
 
 #ux_menu .col {
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 500px;
 
     margin: 5vw 5vw 1vw 5vw;
     filter: opacity(65%);
@@ -679,6 +840,15 @@ a:hover {
     transition: 0.5s;
     filter: opacity(100%);
 }
+
+@media only screen and (min-width: 700px) {
+
+    #ux_menu .col {
+        flex-grow: 1;
+        flex-basis: 200px;
+    }
+}
+
 
 
 /*                  animation start                          */
@@ -693,10 +863,19 @@ a:hover {
 
 #animation .col {
     flex-grow: 2;
-    flex-basis: 300px;
+    flex-basis: 500px;
 
     margin: 1vw 3vw 3vw 0;
 }
+
+@media only screen and (min-width: 850px) {
+
+    #animation .col {
+        flex-grow: 1;
+        flex-basis: 200px;
+    }
+}
+
 
 #animation .klikbar_col {
     transform: scale(1);
@@ -704,8 +883,6 @@ a:hover {
     height: auto;
     width: 400px;
 }
-
-
 
 
 
@@ -763,7 +940,7 @@ a:hover {
 
 #animation_menu .col {
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 500px;
 
     margin: 5vw 5vw 1vw 5vw;
     filter: opacity(70%)
@@ -772,6 +949,14 @@ a:hover {
 #animation_menu .col:hover {
     transition: 0.5s;
     filter: opacity(100%);
+}
+
+@media only screen and (min-width: 700px) {
+
+    #animation_menu .col {
+        flex-grow: 1;
+        flex-basis: 200px;
+    }
 }
 
 /*              Animation Menu slut            */
@@ -806,6 +991,18 @@ a:hover {
     left: 4vw;
 }
 
+@media only screen and (min-width: 700px) {
+
+    #indhold_menu .col {
+        flex-grow: 1;
+        flex-basis: 200px;
+    }
+}
+
+
+
+
+
 /*              Indhold Menu slut            */
 
 
@@ -823,13 +1020,22 @@ a:hover {
 
 #ommig .col {
     flex-grow: 1;
-    flex-basis: 400px;
+    flex-basis: 600px;
     margin: 5vw 0 0 0;
 }
 
 #ommig p,
 #ommig h1 {
     margin: 3vw 3vw 0 3vw;
+}
+
+@media only screen and (min-width: 700px) {
+
+    #ommig .col {
+        flex-basis: 200px;
+    }
+
+
 }
 
 /*                Om mig slut                           */
@@ -848,22 +1054,40 @@ a:hover {
 
 #ux_dataindsamling .col {
     flex-grow: 1;
-    flex-basis: 325px;
+    flex-basis: 500px;
 
     margin: 5vw 0 0 0;
 }
 
 #ux_dataindsamling .col2 {
     flex-grow: 1;
-    flex-basis: 325px;
+    flex-basis: 500px;
 
     margin: 11vw 0 0 0;
+}
+
+#ux_dataindsamling .col3 {
+    flex-grow: 1;
+    flex-basis: 500px;
+
+    margin: -3vw 0 0vw 0;
+}
+
+#ux_dataindsamling .col4 {
+    flex-grow: 1;
+    flex-basis: 500px;
+
+    margin: -3vw 0 0 0;
 }
 
 .ux_dataindsamling {
     opacity: 0;
 }
 
+#ux_dataindsamling .txt1 {
+    background-color: white;
+    padding: 30px;
+}
 
 #ux_dataindsamling .klikbar_col {
     filter: opacity(70%);
@@ -876,17 +1100,31 @@ a:hover {
 
 #ux_dataindsamling .txt {
     margin: 3vw 2vw 0 0;
+    background-color: #F4F9FF;
+    padding: 30px;
 }
 
 .dataindsamling {
-    height: 3vw;
-    width: 20vw;
-    margin: 0vw 0 5vw 13vw;
+    height: auto;
+    width: 350px;
+    margin: 0vw 0 5vw -1vw;
 }
 
 .dataindsamling:hover {
     transition: 0.5s;
     transform: scale(1.1);
 }
+
+@media only screen and (min-width: 700px) {
+
+    #ux_dataindsamling .col,
+    #ux_dataindsamling .col2,
+    #ux_dataindsamling .col3,
+    #ux_dataindsamling .col4 {
+        flex-grow: 1;
+        flex-basis: 300px;
+    }
+}
+
 
 /*                  Web slut                         */
